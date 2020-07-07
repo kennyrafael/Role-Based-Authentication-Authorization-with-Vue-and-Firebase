@@ -1,1 +1,1 @@
-# Role-Based-Authentication-Authorization-wit-Vue-and-Firebase
+# Role Based Authentication & Authorization with Vue and Firebase
