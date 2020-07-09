@@ -1,4 +1,4 @@
-# role-based-authentication-authorization-with-vue-and-firebase
+# Role Based Authentication & Authorization with Vue and Firebase
 
 ## Project setup
 ```
