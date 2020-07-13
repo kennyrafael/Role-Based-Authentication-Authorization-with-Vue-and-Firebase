@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import firebase from 'firebase';
+import firebase from 'firebase'
 
 export default {
   data() {
@@ -69,7 +69,7 @@ export default {
         password: ''
       },
       error: null
-    };
+    }
   },
   methods: {
     submit() {
@@ -77,12 +77,12 @@ export default {
         .auth()
         .signInWithEmailAndPassword(this.form.email, this.form.password)
         .then(data => {
-          this.$router.replace({ name: 'Dashboard' });
+          this.$router.replace({ name: 'Dashboard' })
         })
         .catch(err => {
-          this.error = err.message;
-        });
+          this.error = err.message
+        })
     }
   }
-};
+}
 </script>

@@ -1,5 +1,5 @@
 {
-  "name": "role-based-authentication-authorization-with-vue-and-firebase",
+  "name": "authentication-authorization-with-vue-and-firebase",
   "version": "0.1.0",
   "private": true,
   "scripts": {

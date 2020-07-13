@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import firebase from 'firebase';
+import firebase from 'firebase'
 
 export default {
   data() {
@@ -94,26 +94,18 @@ export default {
         password: ''
       },
       error: null
-    };
+    }
   },
   methods: {
-    submit() {
-      firebase
+    async submit() {
+      const data = await firebase
         .auth()
         .createUserWithEmailAndPassword(this.form.email, this.form.password)
-        .then(data => {
-          data.user
-            .updateProfile({
-              displayName: this.form.name
-            })
-            .then(() => {
-              return;
-            });
-        })
-        .catch(err => {
-          this.error = err.message;
-        });
+
+      await data.user.updateProfile({
+        displayName: this.form.name
+      })
     }
   }
-};
+}
 </script>
